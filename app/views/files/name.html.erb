@@ -1,0 +1,7 @@
+Heyyyyyyyy 
+
+<ul>
+    <% Dir["C:/Users/Louis/Dropbox/StageLouisLagrange/Grafana/FlyData/*.csv"].select{ |f| File.file? f }.map{ |f| File.basename f }.each do |file_name| %>
+    <li><%= link_to file_name, "/#{URI.escape(file_name)}" %></li>
+    <% end %>
+</ul>
