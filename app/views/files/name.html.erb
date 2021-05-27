@@ -1,7 +1,17 @@
-Heyyyyyyyy 
 
-<ul>
-    <% Dir["C:/Users/Louis/Dropbox/StageLouisLagrange/Grafana/FlyData/*.csv"].select{ |f| File.file? f }.map{ |f| File.basename f }.each do |file_name| %>
-    <li><%= link_to file_name, "/#{URI.escape(file_name)}" %></li>
-    <% end %>
-</ul>
+<br>
+---------- Back to event control :  
+<%= link_to 'Back', events_path %>
+
+<br>
+
+<%# Event.find(1) %>
+<%= @events %>
+
+<% require "http" %>
+
+<br />
+    <pre>
+        <%= @body %>
+    </pre>
+    <iframe "www.google.fr" width="900" height="700" allow="fullscreen"></iframe>
