@@ -1,4 +1,5 @@
-
+<% require "http" %>
+<% require 'json' %>
 <br>
 ---------- Back to event control :  
 <%= link_to 'Back', events_path %>
@@ -7,14 +8,17 @@
 
 <%# Event.find(1) %>
 <%= @events %>
-
+<%= @response_get %>
+<br>
+<br>
 <%= @response %>
-
-<% require "http" %>
+<br>
+<%#= @return_request %>
 
 
 <br />
     <pre>
+        
         <%#= "<div>" + @body + "</div>" %>
         
     </pre>
