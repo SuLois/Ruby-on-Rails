@@ -8,10 +8,17 @@
 <%# Event.find(1) %>
 <%= @events %>
 
+<%= @response %>
+
 <% require "http" %>
+
 
 <br />
     <pre>
-        <%= @body %>
+        <%#= "<div>" + @body + "</div>" %>
+        
     </pre>
-    <iframe "www.google.fr" width="900" height="700" allow="fullscreen"></iframe>
+
+    <%= request %>
+
+    

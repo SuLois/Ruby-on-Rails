@@ -21,6 +21,11 @@ gem 'jbuilder', '~> 2.7'
 gem 'excon'
 
 gem 'http'
+
+gem 'rest-client'
+
+gem 'mime-types-data', '~> 3.2015'
+gem 'domain_name', '~> 0.5'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 # Use Active Model has_secure_password
