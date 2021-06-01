@@ -1,28 +1,20 @@
 <% require "http" %>
-<% require 'json' %>
+
 <br>
----------- Back to event control :  
+
+<!-- #Affichage en html -->
+---------- Back to event control :
+
+<!-- #Affichage en Ruby, renvoie vers la page précédente à l appuie sur BACK -->
 <%= link_to 'Back', events_path %>
 
-<br>
+<br><br>
 
-<%# Event.find(1) %>
-<%= @events %>
 <%= @response_get %>
-<br>
-<br>
-<%= @response %>
-<br>
-<%#= @return_request %>
 
+<br><br>
 
-<br />
-    <pre>
-        
-        <%#= "<div>" + @body + "</div>" %>
-        
-    </pre>
+<%= @response_post %>
 
-    <%= request %>
 
     
